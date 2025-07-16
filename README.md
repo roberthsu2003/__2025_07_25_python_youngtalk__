@@ -1,0 +1,2 @@
+# __2025_07_25_python_youngtalk__
+東認青少年python
