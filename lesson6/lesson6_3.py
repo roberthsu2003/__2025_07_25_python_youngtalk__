@@ -6,6 +6,7 @@ min = 1
 max = 100
 count = 0
 target = random.randint(min,max)
+print(target)
 while(True):
   keyin = int(input(f"猜數字範圍{min}~{max}:"))
   count += 1
