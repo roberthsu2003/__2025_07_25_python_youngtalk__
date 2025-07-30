@@ -13,5 +13,8 @@ https://www.youtube.com/watch?v=vV5a0JqJ0bI
 ### 2025_07_25
 https://www.youtube.com/watch?v=Z0NDO3jvoK4
 
-### 2028_07_28
+### 2025_07_28
 https://www.youtube.com/watch?v=b5-L2-7_MQQ
+
+### 2025_07_30
+https://www.youtube.com/watch?v=J4XuO9uLlWs
