@@ -26,8 +26,7 @@ def play_game():
         else:
             print("請輸入提示範圍內的數字\n")
 
-def main():
-    playCount = 1
+def main():    
     parser = argparse.ArgumentParser(description="猜數字遊戲")
     parser.add_argument("-n", "--name",type=str, help = "姓名")
     args = parser.parse_args()
@@ -36,8 +35,15 @@ def main():
         name = input("請輸入姓名:")
     else:
         name = args.name
-    play_game()
-    print(f"{name}:遊戲結束")
+
+    playCount = 0
+    while(True):
+        play_game()
+        playCount += 1
+        play_again = input("您還要繼續嗎(y,n):")
+        if play_again == 'n':
+            break
+    print(f"{name}:遊戲結束,您共玩{playCount}次")
 
 if __name__ == '__main__':
     main()
