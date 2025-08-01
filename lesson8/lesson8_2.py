@@ -1,5 +1,7 @@
 import argparse
-import game
+#import game
+import tools
+
 def parse_name()->str:
     parser = argparse.ArgumentParser(description="猜數字遊戲")
     parser.add_argument("-n", "--name",type=str, help = "姓名")
@@ -16,7 +18,7 @@ def main():
     name:str = parse_name()
     playCount:int = 0
     while(True):
-        game.play_game()
+        tools.game.play_game()
         playCount += 1
         play_again:str = input("您還要繼續嗎(y,n):")
         if play_again == 'n':
