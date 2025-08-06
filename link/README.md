@@ -24,3 +24,6 @@ https://www.youtube.com/watch?v=1Vcmiw-BXVc
 
 ### 2025_08_04
 https://www.youtube.com/watch?v=oBMqr67n_eQ
+
+### 2025_08_06
+https://www.youtube.com/watch?v=LiPazEbjEio
