@@ -21,10 +21,6 @@ def compare(player_gesture, opponent_gesture, record):
         record (dict): 用於記錄勝、敗、平次數的字典。
     """
 
-    """
-    猜拳遊戲主流程函數。
-    控制遊戲流程、顯示結果並統計玩家戰績。
-    """
 
 def input_gesture() -> Literal[0 ,1 ,2 ,'q']:
     while True:
