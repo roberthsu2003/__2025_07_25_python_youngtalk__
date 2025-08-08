@@ -26,23 +26,19 @@ def compare(player_gesture, opponent_gesture, record):
     控制遊戲流程、顯示結果並統計玩家戰績。
     """
 
-def input_gesture()->Literal[0, 1, 2, 'q'] :
+def input_gesture() -> Literal[0 ,1 ,2 ,'q']:
     while True:
         gesture = input("輸入0:剪刀/1:石頭/2:布(輸入q退出):")
         if gesture == "0":
-            gesture = 0
-            break
+            return 0
         elif gesture == "1":
-            gesture = 1
-            break
+            return 1
         elif gesture == "2":
-            gesture = 2
-            break
+            return 2
         elif gesture == "q":
-            break
+            return "q"
         else:
             print("請輸入正確選項")
-    return gesture
 
 def compare(player_gesture,opponent_gesture,record):
     if player_gesture - 1 == opponent_gesture or opponent_gesture - 2 == player_gesture:
