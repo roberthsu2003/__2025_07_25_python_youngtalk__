@@ -40,8 +40,13 @@ def input_gesture() -> Literal[0 ,1 ,2 ,'q']:
         else:
             print("請輸入正確選項")
 
-def compare(player_gesture,opponent_gesture,record):
-    if player_gesture - 1 == opponent_gesture or opponent_gesture - 2 == player_gesture:
+def compare(player_gesture: int, opponent_gesture: int, record: dict):
+    #0:剪刀
+    #1:石頭
+    #2:布
+    if (player_gesture == 0 and opponent_gesture == 2)\
+        or (player_gesture == 1 and opponent_gesture == 0)\
+        or (player_gesture == 2 and opponent_gesture == 1):
         print("你贏了!")
         record["勝"] += 1
     elif player_gesture == opponent_gesture:
@@ -62,10 +67,10 @@ def main():
             print(f"遊戲結束,你的成績是:{record['勝']}勝,{record['敗']}敗,{record['平']}平")
             break
 
-        opponent_gesture = random.randint(0,2)
+        computer_gesture = random.randint(0,2)
         print(f"你出了{gestures[player_gesture]}")
-        print(f"電腦出了{gestures[opponent_gesture]}")
-        compare(player_gesture,opponent_gesture,record)
+        print(f"電腦出了{gestures[computer_gesture]}")
+        compare(player_gesture,computer_gesture,record)
         print(f"目前成績:{record['勝']}勝,{record['敗']}敗,{record['平']}平\n")
         
             
