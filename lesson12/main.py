@@ -62,7 +62,7 @@ class DiceGame:
         print(f"\n=== 第 {self.round_count} 輪 ===")
         
         while True:
-            dice = self.roll_dice()
+            dice = self.roll_dice() #dice是4個骰子點數
             self.display_dice(dice)
             
             score = self.calculate_score(dice)
@@ -111,6 +111,9 @@ class DiceGame:
                 break
             else:
                 print("請輸入正確的選項 (1-4)")
+    
+    
+        return "這是一個擲骰子遊戲"
 
 if __name__ == "__main__":
     game = DiceGame()
